@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE game_objects SYSTEM "games.dtd">
+
+<game_objects>
+
+    <game>
+        <title></title>
+        <genre></genre>
+        <genre></genre>
+        <year></year>
+        <developer></developer>
+        <metascore></metascore>
+        <rules>
+            <playerVersus></playerVersus>
+            <numberOfPlayers></numberOfPlayers>
+            <numberOfLives></numberOfLives>
+        </rules>
+        <platform></platform>
+        <moreinfo url="" />
+    </game>
+
+</game_objects>

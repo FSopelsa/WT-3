@@ -1,0 +1,13 @@
+game_objects
+    genre+
+        title+
+            year
+            developer+
+            metascore
+            rules
+                playerVersus
+                numberOfPlayers
+                numberOfLives
+            platform+
+            moreinfo
+                attr: url

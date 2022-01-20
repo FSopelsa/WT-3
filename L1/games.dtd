@@ -1,0 +1,31 @@
+<!-- 
+game_objects
+    game+
+        title
+        genre+
+        year
+        developer+
+        metascore
+        rules
+            playerVersus
+            numberOfPlayers
+            numberOfLives?
+        platform+
+        moreinfo
+            attr: url
+-->
+
+<!ELEMENT game_objects (game+)>
+    <!ELEMENT game (title, genre+, year, developer+, metascore, rules, platform+, moreinfo)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT genre (#PCDATA)>
+        <!ELEMENT year (#PCDATA)>
+        <!ELEMENT developer (#PCDATA)>
+        <!ELEMENT metascore (#PCDATA)>
+        <!ELEMENT rules (playerVersus, numberOfPlayers, numberOfLives?)>
+            <!ELEMENT playerVersus (#PCDATA)>
+            <!ELEMENT numberOfPlayers (#PCDATA)>
+            <!ELEMENT numberOfLives (#PCDATA)>
+        <!ELEMENT platform (#PCDATA)>
+        <!ELEMENT moreinfo EMPTY>
+            <!ATTLIST moreinfo url CDATA #REQUIRED>

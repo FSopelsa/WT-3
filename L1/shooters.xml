@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE game_objects SYSTEM "games.dtd">
+
+<game_objects>
+
+    <game>
+        <title>Apex Legends</title>
+        <genre>Battle royale</genre>
+        <genre>First-person hero shooter</genre>
+        <year>2019</year>
+        <developer>Respawn Entertainment</developer>
+        <metascore>88</metascore>
+        <rules>
+            <playerVersus>PvP</playerVersus>
+            <numberOfPlayers>60</numberOfPlayers>
+            <numberOfLives>1</numberOfLives>
+        </rules>
+        <platform>PC</platform>
+        <platform>Nintendo Switch</platform>
+        <platform>PlayStation 4</platform>
+        <platform>Xbox One</platform>
+        <platform>Android, iOS</platform>
+        <moreinfo url="https://www.metacritic.com/game/pc/apex-legends" />
+    </game>
+
+    <game>
+        <title>Counter-Strike: Global Offensive</title>
+        <genre>First-person shooter</genre>
+        <genre>Tactical team-shooter</genre>
+        <year>2012</year>
+        <developer>Valve</developer>
+        <developer>Hidden Path Entertainment</developer>
+        <metascore>83</metascore>
+        <rules>
+            <playerVersus>PvP</playerVersus>
+            <numberOfPlayers>10. (5 på varje lag)</numberOfPlayers>
+            <numberOfLives>1 (per runda)</numberOfLives>
+        </rules>
+        <platform>PC</platform>
+        <platform>PlayStation 3</platform>
+        <platform>Xbox 360</platform>
+        <moreinfo url="https://www.metacritic.com/game/pc/counter-strike-global-offensive" />
+    </game>
+
+    <game>
+        <title>Doom</title>
+        <genre>First-person shooter</genre>
+        <genre>Action</genre>
+        <year>2016</year>
+        <developer>id Software</developer>
+        <metascore>85</metascore>
+        <rules>
+            <playerVersus>PvE/PvP</playerVersus>
+            <numberOfPlayers>Upp till 12</numberOfPlayers>
+            <numberOfLives>∞</numberOfLives>
+        </rules>
+        <platform>PC</platform>
+        <platform>PlayStation 4</platform>
+        <platform>Xbox One</platform>
+        <platform>Nintendo Switch </platform>
+        <platform>Google Stadia</platform>
+        <moreinfo url="https://www.metacritic.com/game/pc/doom" />
+    </game>
+
+    <game>
+        <title>Portal 2</title>
+        <genre>First-person shooter</genre>
+        <genre>Puzzle-platform</genre>
+        <year>2011</year>
+        <developer>Valve</developer>
+        <metascore>95</metascore>
+        <rules>
+            <playerVersus>PvE</playerVersus>
+            <numberOfPlayers>1-2</numberOfPlayers>
+            <numberOfLives>∞</numberOfLives>
+        </rules>
+        <platform>PC</platform>
+        <platform>PlayStation 3</platform>
+        <platform>Xbox 360</platform>
+        <moreinfo url="https://www.metacritic.com/game/pc/portal-2" />
+    </game>
+
+</game_objects>
