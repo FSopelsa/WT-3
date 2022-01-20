@@ -4,19 +4,69 @@
 <game_objects>
 
     <game>
-        <title></title>
-        <genre></genre>
-        <genre></genre>
-        <year></year>
-        <developer></developer>
-        <metascore></metascore>
+        <title>Civilization VI</title>
+        <genre>Turn-based strategy</genre>
+        <year>2016</year>
+        <developer>Firaxis Games</developer>
+        <metascore>88</metascore>
         <rules>
-            <playerVersus></playerVersus>
-            <numberOfPlayers></numberOfPlayers>
-            <numberOfLives></numberOfLives>
+            <playerVersus>PvE/PvP</playerVersus>
+            <numberOfPlayers>Upp till 12</numberOfPlayers>
+            <numberOfLives>1</numberOfLives>
         </rules>
-        <platform></platform>
-        <moreinfo url="" />
+        <platform>PC</platform>
+        <platform>Nintendo Switch</platform>
+        <platform>PlayStation 4</platform>
+        <platform>Xbox One</platform>
+        <platform>Android</platform>
+        <platform>iOS</platform>
+        <moreinfo url="https://www.metacritic.com/game/pc/sid-meiers-civilization-vi" />
+    </game>
+
+    <game>
+        <title>Warcraft III: Reign of Chaos</title>
+        <genre>Real-time strategy</genre>
+        <year>2002</year>
+        <developer>Blizzard Entertainment</developer>
+        <metascore>92</metascore>
+        <rules>
+            <playerVersus>PvE/PvP</playerVersus>
+            <numberOfPlayers>Upp till 12</numberOfPlayers>
+            <numberOfLives>∞</numberOfLives>
+        </rules>
+        <platform>PC</platform>
+        <moreinfo url="https://www.metacritic.com/game/pc/warcraft-iii-reign-of-chaos" />
+    </game>
+
+    <game>
+        <title>Age of Empires II: The Age of Kings</title>
+        <genre>Real-time strategy</genre>
+        <year>1999</year>
+        <developer>Ensemble Studios</developer>
+        <metascore>92</metascore>
+        <rules>
+            <playerVersus>PvE/PvP</playerVersus>
+            <numberOfPlayers>Upp till 8</numberOfPlayers>
+            <numberOfLives>1</numberOfLives>
+        </rules>
+        <platform>PC</platform>
+        <platform>PlayStation 2</platform>
+        <moreinfo url="https://www.metacritic.com/game/pc/age-of-empires-ii-the-age-of-kings" />
+    </game>
+
+    <game>
+        <title>StarCraft II: Wings of Liberty</title>
+        <genre>Real-time strategy</genre>
+        <year>2010</year>
+        <developer>Blizzard Entertainment</developer>
+        <metascore>93</metascore>
+        <rules>
+            <playerVersus>PvE/PvP</playerVersus>
+            <numberOfPlayers>Upp till 4</numberOfPlayers>
+            <numberOfLives>1</numberOfLives>
+        </rules>
+        <platform>PC</platform>
+        <moreinfo url="https://www.metacritic.com/game/pc/starcraft-ii-wings-of-liberty" />
     </game>
 
 </game_objects>

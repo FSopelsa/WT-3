@@ -4,19 +4,72 @@
 <game_objects>
 
     <game>
-        <title></title>
-        <genre></genre>
-        <genre></genre>
-        <year></year>
-        <developer></developer>
-        <metascore></metascore>
+        <title>Horizon Zero Dawn</title>
+        <genre>Action role-playing</genre>
+        <genre>Open-World</genre>
+        <year>2017</year>
+        <developer>Guerrilla Games</developer>
+        <metascore>89</metascore>
         <rules>
-            <playerVersus></playerVersus>
-            <numberOfPlayers></numberOfPlayers>
-            <numberOfLives></numberOfLives>
+            <playerVersus>PvE</playerVersus>
+            <numberOfPlayers>1</numberOfPlayers>
+            <numberOfLives>∞</numberOfLives>
         </rules>
-        <platform></platform>
-        <moreinfo url="" />
+        <platform>PlayStation 4</platform>
+        <platform>PC</platform>
+        <moreinfo url="https://www.metacritic.com/game/playstation-4/horizon-zero-dawn" />
+    </game>
+
+    <game>
+        <title>The Last of Us</title>
+        <genre>Action-adventure</genre>
+        <year>2013</year>
+        <developer>Naughty Dog</developer>
+        <metascore>95</metascore>
+        <rules>
+            <playerVersus>PvE</playerVersus>
+            <numberOfPlayers>1</numberOfPlayers>
+            <numberOfLives>∞</numberOfLives>
+        </rules>
+        <platform>PlayStation 3</platform>
+        <platform>PlayStation 4</platform>
+        <moreinfo url="https://www.metacritic.com/game/playstation-3/the-last-of-us" />
+    </game>
+
+    <game>
+        <title>God of War</title>
+        <genre>Action-adventure</genre>
+        <genre>Hack and slash</genre>
+        <year>2018</year>
+        <developer>Santa Monica Studio</developer>
+        <metascore>94</metascore>
+        <rules>
+            <playerVersus>PvE</playerVersus>
+            <numberOfPlayers>1</numberOfPlayers>
+            <numberOfLives>∞</numberOfLives>
+        </rules>
+        <platform>PlayStation 4</platform>
+        <platform>PC</platform>
+        <moreinfo url="https://www.metacritic.com/game/playstation-4/god-of-war" />
+    </game>
+
+    <game>
+        <title>Red Dead Redemption 2</title>
+        <genre>Action-adventure</genre>
+        <genre>Open-World</genre>
+        <year>2018</year>
+        <developer>Rockstar Studios</developer>
+        <metascore>97</metascore>
+        <rules>
+            <playerVersus>PvE</playerVersus>
+            <numberOfPlayers>1</numberOfPlayers>
+            <numberOfLives>∞</numberOfLives>
+        </rules>
+        <platform>PlayStation 4</platform>
+        <platform>Xbox One</platform>
+        <platform>PC</platform>
+        <platform>Google Stadia</platform>
+        <moreinfo url="https://www.metacritic.com/game/playstation-4/red-dead-redemption-2" />
     </game>
 
 </game_objects>
