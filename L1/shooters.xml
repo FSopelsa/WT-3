@@ -33,7 +33,7 @@
         <metascore>83</metascore>
         <rules>
             <playerVersus>PvP</playerVersus>
-            <numberOfPlayers>10. (5 på varje lag)</numberOfPlayers>
+            <numberOfPlayers>10 (5 per lag)</numberOfPlayers>
             <numberOfLives>1 (per runda)</numberOfLives>
         </rules>
         <platform>PC</platform>
