@@ -33,7 +33,24 @@ function listLinks() {
 // ---------------------------------------------------------------
 // Den kurs användaren klickat på, läggs in överst i kurslistan.
 function addCourse() {
-	
+	let klickedCourse = this.innerHTML;
+	console.log(klickedCourse + " - första");
+	let movedCourses = courseListElem.querySelectorAll("p");
+	console.log(movedCourses);
+	for (let i = 0; i < movedCourses.length; i++ ) {
+		console.log("andra");
+
+		if (movedCourses[i].includes(klickedCourse) == true) {
+			return console.log("finns");
+
+		}	else {
+				let newElem = document.createElement("p");
+				let newTextNode = document.createTextNode(klickedCourse);
+				newElem.appendChild(newTextNode);
+				courseListElem.insertBefore(newElem,movedCourses[i]);
+				console.log("sista");
+		}
+	}
 } // End addCourse
 
 // Den kurs användaren klickat på i kurslistan, tas bort.
