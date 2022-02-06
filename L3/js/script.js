@@ -34,20 +34,20 @@ function listLinks() {
 // Den kurs användaren klickat på, läggs in överst i kurslistan.
 function addCourse() {
 	let klickedCourse = this.innerHTML;
-	console.log(klickedCourse + " - första");
+console.log(klickedCourse + " - första");
 	let movedCourses = courseListElem.querySelectorAll("p");
-	console.log(movedCourses);
+console.log(movedCourses);
 	for (let i = 0; i < movedCourses.length; i++ ) {
-		console.log("andra");
+console.log("andra");
 
-		if (movedCourses[i].includes(klickedCourse) == true) {
+		if (movedCourses.includes(klickedCourse) == true) {
 			return console.log("finns");
 
 		}	else {
 				let newElem = document.createElement("p");
 				let newTextNode = document.createTextNode(klickedCourse);
 				newElem.appendChild(newTextNode);
-				courseListElem.insertBefore(newElem,movedCourses[i]);
+				courseListElem.insertBefore(newElem,movedCourses(1));
 				console.log("sista");
 		}
 	}
