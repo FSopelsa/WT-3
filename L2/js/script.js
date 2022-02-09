@@ -16,16 +16,21 @@ window.addEventListener("load",init); // init aktiveras då sidan är inladdad
 // ------------------------------ Meny 1 ------------------------------
 // Avläs menyn för val av ämne
 function selectSubject() {
-	let subjectId = this.value;  //Ämne i valt alternativ
+	let subjectId = 0;
+	if (this.value == "Medieteknik")
+		subjectId = 1;
+	else if (this.value == "Musikvetenskap")
+		subjectId = 2;
+	else 
+		subjectId = 3;
 	requestData(subjectId);
 	this.selectedIndex = 0;
 } // End selectSubject
 
 // Gör ett Ajax-anrop för att läsa in begärd info
-function requestData(subjectId) {
+function requestData(fileNumber) {
 	let request = new XMLHttpRequest(); // Object för Ajax-anropet
-	request.open("GET","getSubInfo.php?file=https://medieteknik.lnu.se/1me323/subjects.xml&id=" + subjectId,true);
-	
+	request.open("GET","getSubInfo.php?file=https://medieteknik.lnu.se/1me323/subjects.xml&id=" + fileNumber,true);
 	request.send(null); // Skicka begäran till servern
 	request.onreadystatechange = function () { // Funktion för att avläsa status i kommunikationen
 		if (request.readyState == 4) // readyState 4 --> kommunikationen är klar
@@ -37,32 +42,33 @@ function requestData(subjectId) {
 
 // Tolkar XML och skriver ut viss data
 function getData(XMLcode) {
-	let subjectElem = XMLcode.getElementsByTagName("subject"); // array med alla subject-element
+	let subjectElem = XMLcode.getElementsByTagName("subject")[0]; // array med subject-element
 	let HTMLcode = "";  //Textsträng där ny HTML skrivs
-
-	for (let i = 0; i < subjectElem.length; i++) { // Referens till name- och info-element inom subjectElementen
-		let nameElem = subjectElem[i].getElementsByTagName("name")[0];
-		let infoElem = subjectElem[i].getElementsByTagName("info")[0];
-		HTMLcode += "<h3>" + nameElem.firstChild.data + "</h3>"; //Bygger HTML
+	let nameElem = subjectElem.getElementsByTagName("name")[0]; //Referens till name- och ->
+	let infoElem = subjectElem.getElementsByTagName("info")[0]; //-info-elem inom subjectElem
+		HTMLcode += "<h3>" + nameElem.firstChild.data + "</h3>"; 
 		HTMLcode += "<p>" + infoElem.firstChild.data + "</p>"; //Bygger HTML
-	}
-	subjectInfoElem.innerHTML = HTMLcode; // Skriver HTML
+			subjectInfoElem.innerHTML = HTMLcode; // Skriver HTML
 } // End getData
-
 
 // -------------------------------- Meny 2 --------------------------------
 // Avläs menyn för val av ämne för kurser
 function selectCourses() {
-	let course = this.value; //Kurs i valt alternativ
+	let course = 0;
+	if (this.value == "Medieteknik")
+		course = 1;
+	else if (this.value == "Musikvetenskap")
+		course = 2;
+	else 
+		course = 3;
 	requestCourseData(course);
 	this.selectedIndex = 0;
 } // End selectCourses
 
 // Gör ett Ajax-anrop för att läsa in begärd info
-function requestCourseData(course) {
+function requestCourseData(filename) {
 	let request = new XMLHttpRequest(); // Object för Ajax-anropet
-	request.open("GET","xml/courselist" + course + ".xml",true);
-	
+	request.open("GET","xml/courselist" + filename + ".xml",true);
 	request.send(null); // Skicka begäran till servern
 	request.onreadystatechange = function () { // Funktion för att avläsa status i kommunikationen
 		if (request.readyState == 4) // readyState 4 --> kommunikationen är klar
@@ -86,4 +92,5 @@ function getCourseData(XMLcode) {
 		HTMLcode += "<p>" + courseCodeElem.firstChild.data + ", " + courseTitleElem.firstChild.data + ", " + courseCreditsElem.firstChild.data + "hp" + "</p>"; //Bygger HTML
 	}
 	courseListElem.innerHTML = HTMLcode; // Skriver HTML
+	HTMLcode = "";
 } // End getCourseData
