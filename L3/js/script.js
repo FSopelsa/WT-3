@@ -34,28 +34,25 @@ function listLinks() {
 // Den kurs användaren klickat på, läggs in överst i kurslistan.
 function addCourse() {
 	let klickedCourse = this.innerHTML;
-console.log(klickedCourse + " - första");
 	let movedCourses = courseListElem.querySelectorAll("p");
-console.log(movedCourses);
-	for (let i = 0; i < movedCourses.length; i++ ) {
-console.log("andra");
-
-		if (movedCourses.includes(klickedCourse) == true) {
-			return console.log("finns");
-
-		}	else {
-				let newElem = document.createElement("p");
-				let newTextNode = document.createTextNode(klickedCourse);
-				newElem.appendChild(newTextNode);
-				courseListElem.insertBefore(newElem,movedCourses(1));
-				console.log("sista");
+	for (let i = 0; i < movedCourses.length; i++) {
+		if (klickedCourse == movedCourses[i].innerHTML) {
+		return;
 		}
 	}
+	let newElem = document.createElement("p");
+	let newTextNode = document.createTextNode(klickedCourse);
+	newElem.appendChild(newTextNode);
+	newElem.addEventListener("click",removeCourse);
+	newElem.style.cursor = "pointer";
+	let firstPelemInList = courseListElem.querySelector("p");
+	courseListElem.insertBefore(newElem,firstPelemInList);
 } // End addCourse
 
 // Den kurs användaren klickat på i kurslistan, tas bort.
 function removeCourse() {
-	
+	console.log("removeCourse");
+	this.parentNode.removeChild(this);
 } // End removeCourse
 // ---------------------------------------------------------------
 // ----- Extramerit -----
