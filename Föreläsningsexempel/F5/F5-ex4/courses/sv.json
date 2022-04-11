@@ -1,0 +1,29 @@
+{
+	"subject": "Svenska språket",
+	"list": [
+		{
+			"code": "1SV108",
+			"title": {
+				"swedish": "Akademiskt skrivande",
+				"english": "Academic Writing"
+			},
+			"credits": 7.5
+		},
+		{
+			"code": "1SV109",
+			"title": {
+				"swedish": "Vikingarnas språk",
+				"english": "The language of the Vikings"
+			},
+			"credits": 7.5
+		},
+		{
+			"code": "1SV208",
+			"title": {
+				"swedish": "Grammatik för lärare",
+				"english": "Grammar for Teachers"
+				},
+			"credits": 7.5
+		}
+	]
+}

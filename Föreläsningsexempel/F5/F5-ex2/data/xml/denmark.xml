@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE vaction_objects SYSTEM "vacation.dtd">
+
+<vaction_objects>
+
+	<accommodation type="apartment">
+		<size>
+			<rooms>2</rooms>
+			<area>62</area>
+		</size>
+		<description>Trevlig lägenhet på andra våningen. Kakelugn i vardagsrummet.</description>
+		<image url="bilder/hus18.jpg"/>
+		<address>
+			<town>Grøneby</town>
+			<country>Danmark</country>
+		</address>
+		<price currency="DKK">6200</price>
+	</accommodation>
+	
+	<accommodation type="cottage">
+		<size>
+			<rooms>3</rooms>
+		</size>
+		<description>Trevlig liten stuga vid kursten.</description>
+		<address>
+			<town>Strandby</town>
+			<country>Danmark</country>
+		</address>
+		<price currency="DKK">4300</price>
+	</accommodation>
+	
+	<accommodation type="apartment">
+		<size>
+			<rooms>4</rooms>
+		</size>
+		<description>Stor och rymlig lägenhet på tredje våningen.</description>
+		<address>
+			<town>Lilleby</town>
+			<country>Danmark</country>
+		</address>
+		<price currency="DKK">3100</price>
+	</accommodation>
+	
+</vaction_objects>

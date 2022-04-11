@@ -1,0 +1,29 @@
+{
+	"subject": "Medieteknik",
+	"list": [
+		{
+			"code": "1ME323",
+			"title": {
+				"swedish": "Webbteknik 3",
+				"english": "Web technology 3"
+			},
+			"credits": 7.5
+		},
+		{
+			"code": "1ME311",
+			"title": {
+				"swedish": "Digitala medier",
+				"english": "Digital Media"
+			},
+			"credits": 7.5
+		},
+		{
+			"code": "1ME331",
+			"title": {
+				"swedish": "Interaktionsdesign 1",
+				"english": "Interaction Design 1"
+				},
+			"credits": 7.5
+		}
+	]
+}

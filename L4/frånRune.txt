@@ -1,9 +1,0 @@
-//ANG SISTA PUNKTEN - "Objekt för bildata"\\
-
-var imgUrls; //- var tidigare en array med alla url´er
-var imgCaptions; //- var tidigare en array med alla bildtexter
--detta ska göras om till olika objekt istället
--ett objekt för varje bild som innehåller en url och en caption
--och sen ska det bara va en array med dom olika objekten
-
-var arrayer men ska 

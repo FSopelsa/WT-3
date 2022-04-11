@@ -1,0 +1,16 @@
+{
+	"accommodation": [
+		{
+			"type": "cottage",
+			"description": "Äldre hus med modern inredning.",
+			"address": {
+				"town": "Puddleton",
+				"country": "England"
+			},
+			"price": {
+				"value": 280,
+				"currency": "GBP"
+			}
+		}
+	]
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#result div {
+    padding: 6px;
+    margin-left: 2em;
+    line-height: 1.5em;
+}
+#result div:nth-of-type(odd) {
+    background-color: #FDA;
+}
+#result strong {
+    font-size: 120%;
+    font-weight: bold;
+}

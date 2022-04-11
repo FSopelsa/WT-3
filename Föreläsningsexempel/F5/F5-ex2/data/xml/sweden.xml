@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE vaction_objects SYSTEM "vacation.dtd">
+
+<vaction_objects>
+
+	<accommodation type="cottage">
+		<size>
+			<rooms>4</rooms>
+			<area>74</area>
+		</size>
+		<description>Genuin stuga med gammaldags charm. Ej indraget vatten.</description>
+		<image url="bilder/hus47.jpg"/>
+		<image url="bilder/hus47plan.gif" caption="planlösning"/>
+		<address>
+			<town>Ekforsen</town>
+			<country>Sverige</country>
+		</address>
+		<price currency="SEK">3400</price>
+	</accommodation>
+	
+	<accommodation type="cottage">
+		<size>
+			<rooms>3</rooms>
+			<area>80</area>
+		</size>
+		<description>Nyrenoverad stuga med modernt kök och badrum.</description>
+		<address>
+			<town>Bergby</town>
+			<country>Sverige</country>
+		</address>
+		<price currency="SEK">2800</price>
+	</accommodation>
+	
+	<accommodation type="cottage">
+		<size>
+			<rooms>2</rooms>
+			<area>40</area>
+		</size>
+		<description>Liten mysig stuga med indraget vatten, men utedass.</description>
+		<address>
+			<town>Skogsby</town>
+			<country>Sverige</country>
+		</address>
+		<price currency="SEK">1900</price>
+	</accommodation>
+	
+</vaction_objects>

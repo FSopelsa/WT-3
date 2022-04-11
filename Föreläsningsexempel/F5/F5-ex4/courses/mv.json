@@ -1,0 +1,29 @@
+{
+	"subject": "Musikvetenskap",
+	"list": [
+		{
+			"code": "1MU311",
+			"title": {
+				"swedish": "Musik i film och TV",
+				"english": "Music in Film and Television"
+			},
+			"credits": 7.5
+		},
+		{
+			"code": "1MV338",
+			"title": {
+				"swedish": "Musikteori I",
+				"english": "Musical Theory I"
+			},
+			"credits": 7.5
+		},
+		{
+			"code": "1MV103",
+			"title": {
+				"swedish": "Musikmiljöer i Europa genom tiderna",
+				"english": "Historical Music Environments in Europe"
+				},
+			"credits": 15
+		}
+	]
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>1ME323, Exempel - JSON</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>1ME323 Webbteknik 3</h1>
+		<h3>Spara JSON i lokal fil på användarens dator</h3>
+	</header>
+	<main>
+		<h2>Kurser</h2>
+		<form id="inputForm">
+			<p><label>Kurskod: <input type="text" name="courseCode"></label> 
+				<label>Poäng: <input type="text" name="credits" size="4"> hp</label></p>
+			<p><label>Svensk titel: <input type="text" name="swedishTitle" size="50"></label><p> 
+			<p><label>Engelsk titel: <input type="text" name="englishTitle" size="50"></label>
+			<input type="button" value="Lägg till kurs" id="addBtn"></p>
+		</form>
+		<hr>
+		<button type="button" id="writeBtn">Visa alla kurser</button>
+		<hr>
+		<form id="fileForm">
+			<p>Spara fil som: <input type="text" id="fileToSave" placeholder="filnamn.json"> 
+				<input type="button" id="saveBtn" value="Spara kurslista">
+			</p>
+			<p>Ladda in kurslista: <input type="file" id="fileToLoad"></p>
+		</form>
+		<hr>
+		<div id="result"></div>
+	</main>
+	<footer>
+		<p>Exempel i 1ME323 Webbdteknik 3 på Linnéuniversitetet</p>
+	</footer>
+</body>
+</html>

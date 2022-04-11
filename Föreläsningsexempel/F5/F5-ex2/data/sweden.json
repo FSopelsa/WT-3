@@ -1,0 +1,40 @@
+{
+	"accommodation": [
+		{
+			"type": "cottage",
+			"description": "Genuin stuga med gammaldags charm. Ej indraget vatten.",
+			"address": {
+				"town": "Ekforsen",
+				"country": "Sverige"
+			},
+			"price": {
+				"value": 3400,
+				"currency": "SEK"
+			}
+		},
+		{
+			"type": "cottage",
+			"description": "Nyrenoverad stuga med modernt kök och badrum.",
+			"address": {
+				"town": "Bergby",
+				"country": "Sverige"
+			},
+			"price": {
+				"value": 2800,
+				"currency": "SEK"
+			}
+		},
+		{
+			"type": "cottage",
+			"description": "Liten mysig stuga med indraget vatten, men utedass.",
+			"address": {
+				"town": "Skogsby",
+				"country": "Sverige"
+			},
+			"price": {
+				"value": 1900,
+				"currency": "SEK"
+			}
+		}
+	]
+}

@@ -1,0 +1,33 @@
+<!--
+vaction_objects
+	accommodation+
+		attr: type (apartment|cottage)
+		size
+			rooms
+			area?
+		description
+		image*
+			attr: url
+			attr: caption?
+		address
+			town
+			country
+		price+
+			attr: currency
+
+-->
+
+<!ELEMENT vaction_objects (accommodation+)>
+	<!ELEMENT accommodation (size, description, image*, address, price)>
+			<!ATTLIST accommodation type (apartment|cottage) #REQUIRED>
+		<!ELEMENT size (rooms, area?)>
+			<!ELEMENT rooms (#PCDATA)>
+			<!ELEMENT area (#PCDATA)>
+		<!ELEMENT description (#PCDATA)>
+		<!ELEMENT image EMPTY>
+				<!ATTLIST image url CDATA #REQUIRED caption CDATA #IMPLIED>
+		<!ELEMENT address (town, country)>
+			<!ELEMENT town (#PCDATA)>
+			<!ELEMENT country (#PCDATA)>
+		<!ELEMENT price (#PCDATA)>
+				<!ATTLIST price currency CDATA #REQUIRED>

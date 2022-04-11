@@ -1,0 +1,40 @@
+{
+	"accommodation": [
+		{
+			"type": "apartment",
+			"description": "Trevlig lägenhet på andra våningen. Kakelugn i vardagsrummet.",
+			"address": {
+				"town": "Grøneby",
+				"country": "Danmark"
+			},
+			"price": {
+				"value": 6200,
+				"currency": "DKK"
+			}
+		},
+		{
+			"type": "cottage",
+			"description": "Trevlig liten stuga vid kursten.",
+			"address": {
+				"town": "Strandby",
+				"country": "Danmark"
+			},
+			"price": {
+				"value": 4300,
+				"currency": "DKK"
+			}
+		},
+		{
+			"type": "apartment",
+			"description": "Stor och rymlig lägenhet på tredje våningen.",
+			"address": {
+				"town": "Lilleby",
+				"country": "Danmark"
+			},
+			"price": {
+				"value": 3100,
+				"currency": "DKK"
+			}
+		}
+	]
+}
