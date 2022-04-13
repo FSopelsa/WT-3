@@ -3,7 +3,7 @@ function init() {
 	let gallery = new ImageViewer("imgViewer");				// Lokal variabel som objektets instans sparas i
 	document.querySelector("#categoryMenu").addEventListener("change", 
 			function() {
-				gallery.requestImages("xml/images" + this.selectedIndex + ".xml",);
+				gallery.requestImages("json/images" + this.selectedIndex + ".json",);
 				this.selectedIndex = 0;
 			}
 		);
@@ -30,33 +30,30 @@ function ImageViewer(id) {
 } // End ImageViewer
  //________________________________________________________________________________________________________________________\\
 //-Gör ett Ajax-anrop för att läsa in begärd fil______________________________-Gör ett Ajax-anrop för att läsa in begärd fil\\
-ImageViewer.prototype.requestImages = function(file) { // Parametern nr används i url:en för den fil som ska läsas in
+ImageViewer.prototype.requestImages = function(filename) { // Parametern nr används i url:en för den fil som ska läsas in
 	let self = this;		// Sparar this i en lokal variabel så att den kan användas för metodsanrop längre ned
 	let request = new XMLHttpRequest(); // Object för Ajax-anropet
-	request.open("GET",file,true);
+	request.open("GET",filename,true);
 	request.send(null); // Skicka begäran till servern
 	request.onreadystatechange = function () { // Funktion för att avläsa status i kommunikationen
 		if (request.readyState == 4) // readyState 4 --> kommunikationen är klar
-			if (request.status == 200) self.getImages(request.responseXML); // status 200 (OK) --> filen fanns
+			if (request.status == 200) self.getImages(request.responseText); // status 200 (OK) --> filen fanns
 			else document.getElementById("result").innerHTML = "Den begärda resursen fanns inte.";
 	};
 } // End requestImages
  //________________________________________________________________________________________________________________________\\
-//-Tolka XML-koden från den begärda filen____________________________________________-Tolka XML-koden från den begärda filen\\
-ImageViewer.prototype.getImages = function(XMLcode) { // Parametern XMLcode är hela den inlästa XML-koden
-	this.titleElem.innerHTML = XMLcode.getElementsByTagName("category")[0].firstChild.data;
-	this.imgUrls = [];		// Ny tom array för bilder
-	let imgUrls = XMLcode.getElementsByTagName("url"); // Alla url-element
-	this.imgCaptions = [];	// Ny tom array för bildtexter
-	let imgCaptions = XMLcode.getElementsByTagName("caption"); // Alla caption-element
-	this.imgIx = 0;			// Index för aktuell bild
-	this.list = [];			// Tömmer arrayen för att fylla på med vald kategori
-	for (let i = 0; i < imgUrls.length; i++) {
-		let image = {
-			url: imgUrls[i].firstChild.data,  				 // Initiera med den tomma bilden
-			caption: imgCaptions[i].firstChild.data			 // Tom bildtext för den tomma bilden
+//-Tolka XML-koden från den begärda filen___________________________________________-Tolka JSON-koden från den begärda filen\\
+ImageViewer.prototype.getImages = function(JSONtext) { 		   // Parametern JSONtext är hela den inlästa JSON-koden
+	this.titleElem.innerHTML = JSON.parse(JSONtext).category; // Skriver ut vald kategori över bild
+	let image = JSON.parse(JSONtext).image;			  	  	 // Lokal variabel där vald JSON-info sparas
+	this.imgIx = 0;			 						 	    // Index för aktuell bild
+	this.list = [];										   // Tömmer arrayen för att fylla på med vald kategori
+	for (let i = 0; i < image.length; i++) {		
+		let pic = {								   		 //_
+			url: image[i].url,		   			  	    //__
+			caption: image[i].caption 			 	   //___Sparar url och caption i en lokal variabel pic
 		};
-		this.list.push(image);
+		this.list.push(pic);						 // Pushar pic till listan list
 	}
 	this.showImage();
 } // End getImages

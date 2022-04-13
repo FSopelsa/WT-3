@@ -1,0 +1,97 @@
+{
+    "game_objects": {
+        "game": [
+            {
+                "title": "Horizon Zero Dawn",
+                "genre": [
+                    "Action role-playing",
+                    "Open-World"
+                ],
+                "year": 2017,
+                "developer": "Guerrilla Games",
+                "metascore": 89,
+                "rules": {
+                    "playerVersus": "PvE",
+                    "numberOfPlayers": 1,
+                    "numberOfLives": "∞"
+                },
+                "platform": [
+                    "PlayStation 4",
+                    "PC"
+                ],
+                "moreinfo": {
+                    "-url": "https://www.metacritic.com/game/playstation-4/horizon-zero-dawn",
+                    "-self-closing": "true"
+                }
+            },
+            {
+                "title": "The Last of Us",
+                "genre": "Action-adventure",
+                "year": 2013,
+                "developer": "Naughty Dog",
+                "metascore": 95,
+                "rules": {
+                    "playerVersus": "PvE",
+                    "numberOfPlayers": 1,
+                    "numberOfLives": "∞"
+                },
+                "platform": [
+                    "PlayStation 3",
+                    "PlayStation 4"
+                ],
+                "moreinfo": {
+                    "-url": "https://www.metacritic.com/game/playstation-3/the-last-of-us",
+                    "-self-closing": "true"
+                  }
+            },
+            {
+                "title": "God of War",
+                "genre": [
+                    "Action-adventure",
+                    "Hack and slash"
+                ],
+                "year": 2018,
+                "developer": "Santa Monica Studio",
+                "metascore": 94,
+                "rules": {
+                    "playerVersus": "PvE",
+                    "numberOfPlayers": 1,
+                    "numberOfLives": "∞"
+                },
+                "platform": [
+                    "PlayStation 4",
+                    "PC"
+                ],
+                "moreinfo": {
+                    "-url": "https://www.metacritic.com/game/playstation-4/god-of-war",
+                    "-self-closing": "true"
+                }
+            },
+            {
+                "title": "Red Dead Redemption 2",
+                "genre": [
+                    "Action-adventure",
+                    "Open-World"
+                ],
+                "year": 2018,
+                "developer": "Rockstar Studios",
+                "metascore": 97,
+                "rules": {
+                    "playerVersus": "PvE",
+                    "numberOfPlayers": 1,
+                    "numberOfLives": "∞"
+                },
+                "platform": [
+                    "PlayStation 4",
+                    "Xbox One",
+                    "PC",
+                    "Google Stadia"
+                ],
+                "moreinfo": {
+                    "-url": "https://www.metacritic.com/game/playstation-4/red-dead-redemption-2",
+                    "-self-closing": "true"
+                }
+            }
+        ]
+    }
+}
