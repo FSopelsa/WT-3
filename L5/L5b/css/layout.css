@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* ----- Grundstil för webbsidan ----- */
+html, body, nav, header, main, aside, footer, article, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	height: 100%;
+	user-select: none;
+}
+body {
+	height: 100%;
+    background-color: rgb(23, 16, 27);
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: grid;
+	grid-template-columns: auto minmax(100px,900px) auto;
+	grid-template-rows: min-content auto min-content;
+	grid-template-areas:
+		".	    header	.     "
+		"main   main	main  "
+		"footer	footer	footer";
+}
+header {
+	grid-area: header;
+	background-color: rgb(7, 10, 48);
+	box-shadow: 5px 5px 10px rgb(63, 9, 9), -5px 5px 10px rgb(155, 7, 7);
+	margin-bottom: 10px;
+}
+header h1 {
+	font-size: 28px;
+	text-align: center;
+	color:rgb(223, 225, 255)
+}
+main {
+	grid-area: main;
+	padding: 10px;
+}
+main h2, main h3, main h4 {
+	color: rgb(22, 17, 97);
+	font-style: italic;
+}
+main h2 {
+	border-bottom: 3px double #C00;
+}
+#infoElems {
+    background-color: rgb(180, 174, 174);
+    font-size: 1.2em;
+	max-width: 1000px;
+	text-align: center;
+	position: sticky;
+	top: 60%;
+	left: 26.5%;
+}
+#infoElems ul  li{
+	color:rgb(3, 10, 110);
+	font-size: 1.1em;
+	max-width: 1000px;
+	list-style-type: none;
+  	overflow: hidden;
+	padding: 7px;
+	margin: 2px;
+}
+footer {
+	grid-area: footer;
+	background-color: rgb(128, 127, 136);
+	box-shadow: 0px -5px 10px #999;
+	padding: 4px;
+	font-size: 0.8em;
+	text-align: center;
+}
+hr {
+	clear:both;
+}
+img {
+	max-width: 100%;
+}
+a {
+	color: #000;
+}
+.alignLeft {
+	float: left;
+}
+.alignRight {
+	float: right;
+}
+
+@media screen and (max-width:400px) {
+	header h1, header h2, header h3 {
+		font-size: 1em;
+	}
+}
