@@ -51,8 +51,7 @@ main h2 {
 	max-width: 1000px;
 	text-align: center;
 	position: sticky;
-	top: 60%;
-	left: 26.5%;
+	left: 26%;
 }
 #infoElems ul  li{
 	color:rgb(3, 10, 110);

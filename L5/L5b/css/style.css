@@ -14,34 +14,3 @@
     width: 40vh;
     height: 50vh;
 }
-
-#imgElems figcaption {
-    font-style: italic;
-}
-#smallViewers {
-    padding-top: 20px;
-    clear: both;
-}
-#smallViewers div {
-    display: inline-block;
-    width: 120px;
-    margin-right: 10px;
-}
-#smallViewers h3 {
-    margin: 0;
-    font-size: 0.8em;
-}
-#smallViewers img {
-    width: 100%;
-}
-#smallViewers p {
-    display: none;
-}
-
-#menus form {
-    float: left;
-    margin-right: 40px;
-}
-#menus select {
-    font-size: 1em;
-}
