@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+#flickrImg img {
+    width: 100px;
+    margin-right: 10px;
+    border: 3px groove #060;
+}

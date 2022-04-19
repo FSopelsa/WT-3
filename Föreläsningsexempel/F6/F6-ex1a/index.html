@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>1ME323, Exempel - Flickr API</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>1ME323 Webbteknik 3</h1>
+		<h3>Flickr API – Anrop i HTML-koden och callback-funktion i JS-filen</h3>
+	</header>
+	<main>
+		<h2>Fem bilder som har taggen "cat"</h2>
+		<div id="flickrImg">
+			<script type="text/javascript" src="https://api.flickr.com/services/rest/?api_key=DIN-API-KEY&method=flickr.photos.search&tags=cat&per_page=5&format=json">
+			</script>
+		</div>
+	</main>
+	<footer>
+		<p>Exempel i 1ME323 Webbdteknik 3 på Linnéuniversitetet</p>
+	</footer>
+</body>
+</html>

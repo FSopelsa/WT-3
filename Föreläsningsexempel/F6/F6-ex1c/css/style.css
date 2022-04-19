@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#searchForm input {
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+#flickrImg img {
+    width: 100px;
+    margin-right: 10px;
+    border: 3px groove #060;
+    cursor:pointer;
+}
+
+#pageNr {
+    margin: 0 2em;
+}
+
+#largeImg img {
+    max-width: 600px;
+    max-height: 400px;
+}

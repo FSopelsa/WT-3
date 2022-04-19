@@ -1,0 +1,18 @@
+Flickr API key
+===============
+För att exempel 1 och 2 ska fungera måste du först skaffa en egen API key på Flickr. Sedan byter du ut texten DIN-API-KEY i programkoden mot din egen API key.
+
+I F6-ex1a gör du det i filen index.htm i src-attributet i script-taggen som ligger mitt i koden.
+
+I F6-ex1b och F6ex1c gör du det i filen script.js, i den globala variabeln myApiKey som ligger i början av filen.
+
+
+Google Maps API key
+===================
+Ska exempel 2 och 3 fungera med bra kartor, måste du registrera dig och skapa en egen API key på Google Maps. Programmen fungerar dock utan detta, men kartorna bli då mörkgrå.
+
+Om du skaffar en egen API key, får du lägga till den i filerna index.htm, där det refereras till Google maps i en script-tagg.
+
+<script src="https://maps.googleapis.com/maps/api/js?key=DIN-API-KEY"></script>
+
+DIN-API-KEY ska då vara den nyckel du fått från Google maps.

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>1ME323, Exempel - Flickr API</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>1ME323 Webbteknik 3</h1>
+		<h3>Flickr API – Anrop av sökfunktionen med taggar och sidnummer</h3>
+	</header>
+	<main>
+		<h2>Sök bilder på Flickr</h2>
+		<form id="searchForm">
+			<label>Taggar: <input type="text" name="tags"></label>
+			<button type="button" name="searchBtn">Sök</button>
+		</form>
+		<hr>
+		<div id="flickrImg"></div>
+		<button type="button" id="prevBtn">Föregående sida</button>
+		<span id="pageNr"></span>
+		<button type="button" id="nextBtn">Nästa sida</button>
+		<hr>
+		<figure id="largeImg">
+			<img src="" alt="Stor bild">
+			<figcaption></figcaption>
+		</figure>
+	</main>
+	<footer>
+		<p>Exempel i 1ME323 Webbdteknik 3 på Linnéuniversitetet</p>
+	</footer>
+</body>
+</html>
