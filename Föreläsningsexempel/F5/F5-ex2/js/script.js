@@ -4,7 +4,7 @@ var resElem;	// Referens till elementet för resultat
 // Initiering av globala variabler och händelsehanterare.
 function init() {
 	resElem = document.getElementById("result");
-	let btnElems = document.getElementById("countryButtons").getElementsByTagName("button");
+	let btnElems = document.getElementById("addrBtns").getElementsByTagName("button");
 	for (let i = 0; i < btnElems.length; i++) {
 		btnElems[i].addEventListener("click",selectCountry);
 	}
