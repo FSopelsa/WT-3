@@ -68,7 +68,7 @@ ImageViewer.prototype.showInfo = function(JSONtext, imgIx) { 		   // Parametern 
 	this.playerVersus.innerHTML = " " + clickedGame.rules.playerVersus; 			// Versus läggs in
 	this.numberOfPlayers.innerHTML = " " + clickedGame.rules.numberOfPlayers; 	// Antal spelare läggs in
 	this.numberOfLives.innerHTML =  " " + clickedGame.rules.numberOfLives; 		// Antal liv läggs in
-	this.moreinfoElem.innerHTML = " " + clickedGame.moreinfo; 					// Länk läggs in
-	this.moreinfoElem.setAttribute('href', clickedGame.moreinfo); 				// Länk görs klickbar
+	this.moreinfoElem.innerHTML = " " + clickedGame.moreinfo.url; 					// Länk läggs in
+	this.moreinfoElem.setAttribute('href', clickedGame.moreinfo.url); 				// Länk görs klickbar
 } // End getImages
  //________________________________________________________________________________________________________________________\\
