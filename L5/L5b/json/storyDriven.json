@@ -18,7 +18,9 @@
                     "PlayStation 4",
                     "PC"
                 ],
-                "moreinfo": "https://www.metacritic.com/game/playstation-4/horizon-zero-dawn"
+                "moreinfo": {
+                    "url": "https://www.metacritic.com/game/playstation-4/horizon-zero-dawn"
+                }
             },
             {
                 "title": "The Last of Us",
@@ -35,7 +37,9 @@
                     "PlayStation 3",
                     "PlayStation 4"
                 ],
-                "moreinfo": "https://www.metacritic.com/game/playstation-3/the-last-of-us"
+                "moreinfo": {
+                    "url": "https://www.metacritic.com/game/playstation-3/the-last-of-us"
+                }
             },
             {
                 "title": "God of War",
@@ -55,7 +59,9 @@
                     "PlayStation 4",
                     "PC"
                 ],
-                "moreinfo": "https://www.metacritic.com/game/playstation-4/god-of-war"
+                "moreinfo": {
+                    "url": "https://www.metacritic.com/game/playstation-4/god-of-war"
+                }
             },
             {
                 "title": "Red Dead Redemption 2",
@@ -77,7 +83,9 @@
                     "PC",
                     "Google Stadia"
                 ],
-                "moreinfo": "https://www.metacritic.com/game/playstation-4/red-dead-redemption-2"
+                "moreinfo": {
+                    "url": "https://www.metacritic.com/game/playstation-4/red-dead-redemption-2"
+                }
             }
         ]
 }
