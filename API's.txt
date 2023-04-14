@@ -1,2 +1,2 @@
 FLICKR key: 8ecfae55c008f18261e6babdb14e6adf
-FLICKR Secret: 513e86b182f717bb 
+FLICKR Secret: -----------------
